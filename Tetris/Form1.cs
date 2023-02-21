@@ -237,12 +237,12 @@ namespace Tetris
                             buttons[3].Location = new Point(buttons[3].Location.X + deslocamento, buttons[3].Location.Y - deslocamento);
                             break;
                         case 2:
-                            buttons[0].Location = new Point(buttons[0].Location.X + deslocamento, buttons[0].Location.Y + deslocamento);
+                            buttons[2].Location = new Point(buttons[2].Location.X - deslocamento, buttons[2].Location.Y);
+                            buttons[3].Location = new Point(buttons[3].Location.X - 40, buttons[3].Location.Y + deslocamento);
                             break;
                         case 3:
-                            buttons[0].Location = new Point(buttons[0].Location.X - deslocamento, buttons[0].Location.Y - deslocamento);
-                            buttons[2].Location = new Point(buttons[2].Location.X + deslocamento, buttons[2].Location.Y + deslocamento);
-                            buttons[3].Location = new Point(buttons[3].Location.X - deslocamento, buttons[3].Location.Y + deslocamento);
+                            buttons[2].Location = new Point(buttons[2].Location.X + 40, buttons[2].Location.Y + deslocamento);
+                            buttons[3].Location = new Point(buttons[3].Location.X + deslocamento, buttons[3].Location.Y);
                             break;
                     }
                     rotation = rotation < 3 ? rotation + 1 : 0;
